@@ -1,3 +1,4 @@
+const path = require('path');
 const express = require('express');
 const routes = require('./controllers');
 const app = express();
@@ -16,7 +17,9 @@ app.use(cors());
 
 
 app.use(express.json());
-app.use(express.urlencoded({ extended: false }));
+app.use(express.urlencoded({ extended: true }));
+app.use(express.static(path.join(__dirname, 'public')));
+
 app.use(routes);
 
 // Force: is a method that resets dB information, true wipes it, false does not.

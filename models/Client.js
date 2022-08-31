@@ -3,9 +3,9 @@ const { Model, DataTypes } = require('sequelize');
 const sequelize = require('../config/connection');
 
 class Client extends Model {
-    checkPassword(clientPw) {
-        return bcrypt.compareSync(clientPw, this.password)
-    };
+    // checkPassword(clientPw) {
+    //     return bcrypt.compareSync(clientPw, this.password)
+    // };
 };
 
 Client.init(

@@ -1,10 +1,8 @@
 const router = require('express').Router();
-const { Client, } = require('../../models');
+const { Client} = require('../../models');
 
 router.get("/", (req, res) => {
-    Client.findAll({
-    //   include: [Exercise,]
-    }).then(data => {
+    Client.findAll().then(data => {
       res.json(data)
     }).catch(err => {
       res.status(500).json({ msg: "womp womp", err })

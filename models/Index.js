@@ -1,3 +1,4 @@
+
 const Client = require('./Client');
 const Coach = require('./Coach');
 const Exercise = require('./Exercise');

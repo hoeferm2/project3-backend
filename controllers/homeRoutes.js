@@ -5,8 +5,4 @@ router.get('/', (req, res) => {
 })
 
 
-router.get('/api', (req, res) => {
-    res.send('welcome this is the Api route.')
-})
-
 module.exports = router;

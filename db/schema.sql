@@ -1,0 +1,3 @@
+DROP DATABASE IF EXISTS lftr_db_2;
+
+CREATE DATABASE lftr_db_2;
